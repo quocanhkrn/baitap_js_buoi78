@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BÀI TẬP JAVASCRIPT BUỔI 07 - 08</title>
+  </head>
+  <body>
+    <div class="container w-50 mx-auto py-5 lh-base">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="initializeArray" placeholder="name@example.com" />
+        <label for="initializeArray">Khởi tạo một mảng gồm các số nguyên <i>(Nhập dưới dạng: -15 45 -78 21 54 ...)</i></label>
+      </div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest01()">TỔNG CÁC SỐ DƯƠNG TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest01Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest02()">ĐẾM SỐ DƯƠNG TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest02Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest03()">TÌM SỐ NHỎ NHẤT TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest03Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest04()">TÌM SỐ DƯƠNG NHỎ NHẤT TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest04Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest05()">TÌM SỐ CHẴN CUỐI CÙNG TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest05Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" data-bs-toggle="modal" data-bs-target="#quest06Modal">
+        ĐỔI VỊ TRÍ 2 PHẦN TỬ CỦA MẢNG
+      </button>
+      <div class="modal fade" id="quest06Modal" tabindex="-1" aria-labelledby="quest06ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="quest06ModalLabel">Nhập vị trí của 2 phần tử trong mảng</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="pos01" placeholder="name@example.com" />
+                <label for="pos01">Vị trí 01</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="pos02" placeholder="name@example.com" />
+                <label for="pos02">Vị trí 02</label>
+              </div>
+              <div class="alert-primary" role="alert" id="quest06Result"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="quest06()">ĐỔI CHỖ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest07()">SẮP XẾP MẢNG THEO THỨ TỰ TĂNG DẦN</button>
+      <div class="alert-primary" role="alert" id="quest07Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest08()">TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest08Result"></div>
+      <hr />
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="initializeArray02" placeholder="name@example.com" />
+        <label for="initializeArray02">Khởi tạo một mảng gồm các số thực <i>(Nhập dưới dạng: -1.2 6 -7.8 9.4 4...)</i></label>
+      </div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest09()">SỐ CÁC SỐ NGUYÊN TRONG MẢNG</button>
+      <div class="alert-primary" role="alert" id="quest09Result"></div>
+      <button type="button" class="btn btn-primary w-100 mb-3" onclick="quest10()">ĐẾM SỐ DƯƠNG VÀ SỐ ÂM</button>
+      <div class="alert-primary" role="alert" id="quest10Result"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
